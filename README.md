@@ -2,7 +2,7 @@
 
 1. Code is written in `main.c`.
 
-2. Then it is compiled into `main.wasm`, with the `add` function exported:
+2. Then it is compiled into `main.wasm`, with the `add` function exported. Notice it has an underscore in the call to `emcc` 🤷🏻‍♂️.
    ```
    emcc -v main.c -o main.wasm -sSTANDALONE_WASM -sEXPORTED_FUNCTIONS=_add
    ```
